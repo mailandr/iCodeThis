@@ -1,0 +1,136 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif, Cochin, Georgia, Times,
+    "Times New Roman", serif;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  flex-flow: column nowrap;
+  background-color: rgb(232, 236, 243);
+}
+
+.information {
+  margin-top: 4rem;
+  font-size: 1.4rem;
+
+  color: rgb(180, 180, 180);
+  padding: 1.3rem 3.2rem;
+  background-color: rgb(12, 18, 38);
+  border-radius: 2.5rem;
+  box-shadow: 0px 0px 10px 1px rgb(190, 190, 190);
+  text-align: center;
+}
+
+.headline {
+  margin-top: 5rem;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.palette-container {
+  margin-top: 7rem;
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 2.8rem;
+  justify-content: center;
+  row-gap: 3.5rem;
+}
+
+.palette {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 18rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1.5rem;
+  transition: all 300ms;
+}
+
+.palette:hover {
+  transform: translateY(-1rem);
+  cursor: pointer;
+  box-shadow: 5px 0 5px 3px rgba(200, 200, 200, 0.3),
+    0 5px 5px 3px rgba(200, 200, 200, 0.3),
+    -5px 0 5px 3px rgba(200, 200, 200, 0.3);
+}
+.palette:hover .text {
+  color: black;
+}
+
+.color {
+  margin-top: 0.8rem;
+  height: 22rem;
+  width: 90%;
+  background-color: yellow;
+  border-radius: 0.5rem;
+}
+
+.color--1 {
+  background-color: #eeedf0;
+}
+.color--2 {
+  background-color: #a1b5c1;
+}
+.color--3 {
+  background-color: #f9aca7;
+}
+.color--4 {
+  background-color: #68747d;
+}
+.color--5 {
+  background-color: #cf365f;
+}
+
+.text {
+  margin: 1.5rem 0;
+  font-size: 1.7rem;
+  color: rgb(80, 80, 80);
+  font-weight: 600;
+}
+
+.btn-generate {
+  margin-top: 5rem;
+  padding: 1.7rem 11rem;
+  background-color: rgb(126, 108, 202);
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px 1px rgb(190, 190, 190);
+  transition: all 300ms;
+  text-align: center;
+}
+
+.btn-generate:hover {
+  cursor: pointer;
+  transform: scale(1.05) translateY(-5px);
+}
+
+.information2 {
+  margin-top: 1.8rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.information3 {
+  margin: 6rem 0;
+  font-size: 1.2rem;
+  color: rgb(140, 140, 140);
+  padding: 0.8rem 1.5rem;
+  background-color: white;
+  border-radius: 2.5rem;
+  text-align: center;
+}
