@@ -14,28 +14,35 @@ html {
   box-sizing: inherit;
 }
 
-.container {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  flex-flow: column nowrap;
+body {
   background-color: rgb(232, 236, 243);
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
 .information {
-  margin-top: 4rem;
+  position: absolute;
+  top: 5rem;
   font-size: 1.4rem;
 
   color: rgb(180, 180, 180);
-  padding: 1.3rem 3.2rem;
+  padding: 1.1rem 3.5rem;
   background-color: rgb(12, 18, 38);
   border-radius: 2.5rem;
   box-shadow: 0px 0px 10px 1px rgb(190, 190, 190);
   text-align: center;
 }
 
+.information-color {
+  font-weight: 600;
+}
+
 .headline {
-  margin-top: 5rem;
+  margin-top: 15rem;
   font-size: 3rem;
   font-weight: 600;
   text-align: center;
@@ -133,4 +140,8 @@ html {
   background-color: white;
   border-radius: 2.5rem;
   text-align: center;
+}
+
+.hidden {
+  display: none;
 }
