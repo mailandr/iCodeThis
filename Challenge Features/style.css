@@ -1,0 +1,93 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: rgb(13, 30, 92);
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.feature-heading {
+  margin-top: 10rem;
+  width: 100rem;
+}
+.heading {
+  font-size: 5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: rgb(182, 193, 226);
+}
+
+.features-container {
+  margin-top: 4.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  background-color: inherit;
+  width: 100rem;
+  row-gap: 2rem;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: 4.8rem 1fr;
+  width: 40%;
+  background-color: inherit;
+  column-gap: 2rem;
+}
+
+.icon-container {
+  position: relative;
+}
+
+.icon-circle {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  background-color: rgb(44, 61, 123);
+  z-index: 1;
+  top: 0.5rem;
+  left: -1rem;
+  border-radius: 50%;
+}
+
+.icon {
+  display: flex;
+  position: relative;
+  padding-top: 2rem;
+  z-index: 2;
+  justify-content: center;
+}
+
+.icon svg {
+  fill: rgb(97, 113, 163);
+}
+.features-heading {
+  margin-top: 2rem;
+  color: rgb(177, 188, 222);
+  font-size: 2.2rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+.feature-text {
+  color: rgb(177, 188, 222);
+  font-size: 1.3rem;
+  margin-top: 1.3rem;
+  line-height: 2rem;
+}
