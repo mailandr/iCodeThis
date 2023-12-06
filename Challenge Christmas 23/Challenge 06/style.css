@@ -1,0 +1,148 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: "Trebuchet MS", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif, Cochin, Georgia, Times,
+      "Times New Roman", serif;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+  }
+  
+  body {
+    background-color: #f9fbff;
+  }
+  
+  .wrapper {
+    width: 100%;
+    max-width: 105rem;
+    margin: 2.5rem auto;
+  }
+  
+  .wrapper-margin {
+    margin: 0 2.5rem;
+  }
+  
+  .items-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    row-gap: 2rem;
+    column-gap: 1rem;
+  }
+  
+  .item-img-wrapper,
+  .item-new,
+  .item-sale,
+  .item-added {
+    position: relative;
+  }
+  
+  .item-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    background-color: rgb(232, 236, 243);
+    margin-bottom: 1rem;
+  }
+  
+  .item-img:hover {
+    cursor: pointer;
+  
+  }
+  
+  .item-img-wrapper:hover .item-img::after {
+    content: "Add to cart 🛒";
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: white;
+    text-align: center;
+    height: 3rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #227393;
+    position: absolute;
+    z-index: 9;
+  }
+  
+  .item-added .item-img::after {
+    content: "Added to cart";
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: black;
+    text-align: center;
+    height: 3rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #cfe7fc;
+    position: absolute;
+    z-index: 10;
+  }
+  
+  .item-added .item-img-wrapper:hover .item-img::after {
+    content: "Remove from cart 🛒";
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: white;
+    text-align: center;
+    height: 3rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #e15145;
+    position: absolute;
+    z-index: 9;
+  }
+  
+  .item-new>.item-img-wrapper::before {
+    content: "NEW";
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: white;
+    text-align: center;
+    height: 3rem;
+    top: 0;
+    left: 0;
+    background-color: #227393;
+    position: absolute;
+  }
+  
+  .item-sale>.item-img-wrapper::before {
+    content: "-23%";
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: white;
+    text-align: center;
+    height: 3rem;
+    top: 0;
+    left: 0;
+    background-color: #e15145;
+    position: absolute;
+  }
+  
+  .item-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .item-price {
+    font-size: 2rem;
+    font-family: "Tahoma";
+    font-weight: 400;
+  }
+  
+  .item-price--reduced {
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    color: grey;
+  }
